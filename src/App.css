@@ -1,0 +1,19 @@
+.password-forget{
+  color: rgb(0, 183, 255);
+  text-decoration: underline;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.img{
+  width: 50%;
+  height: 50%;
+  align-self: center;
+}
+
+.sign-up{
+  text-decoration: underline;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  color: rgb(0, 183, 255);
+}
