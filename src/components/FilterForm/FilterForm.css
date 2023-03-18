@@ -1,30 +1,25 @@
-.search-principal {
-    border: 1px solid #ccc;
-    outline: none;
-    border-radius: 5px;
-    width: 49%;
-    height: 5%;
-    padding: 1%;
-    transition: all 0.5s;
-  }
-
-  .search-date {
-    border: 1px solid #ccc;
-    outline: none;
-    border-radius: 5px;
-    width: 15%;
+.button-filter {
+    width: 70%;
     margin-left: 1.2%;
-    height: 5%;
-    padding: 1%;
-    transition: all 0.5s;
-  }
-
-  .button-filter {
-    width: 10%;
-    margin-left: 1.2%;
-    height: 5%;
+    height: 70%;
     padding: 1%;
     transition: all 0.5s;
     color: black;
-  }
-  
+    border-radius: 10px;
+}
+
+.content-bottom {
+    display: flex;
+}
+
+.input-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.form-outline {
+  width:100%;
+}

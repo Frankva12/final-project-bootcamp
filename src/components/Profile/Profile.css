@@ -1,0 +1,9 @@
+.logout-text{
+    color: red;
+    cursor: pointer;
+}
+
+.add-application{
+    display: flex;
+    justify-content: end;
+}

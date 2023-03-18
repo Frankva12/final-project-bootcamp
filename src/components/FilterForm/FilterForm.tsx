@@ -1,30 +1,35 @@
-import React from "react";
-import { MDBContainer, MDBBtn  } from "mdb-react-ui-kit";
-import './FilterForm.css'
+import { MDBBtn, MDBRow, MDBCol, MDBContainer, MDBInput } from 'mdb-react-ui-kit';
+import './FilterForm.css';
 
 export default function FilterForm() {
-  return (
-    <div className="py-5 ">
-      <input
-        type="text"
-        className="search-principal"
-        placeholder="Search"
-      />
-      <label htmlFor="date-for">For</label>
-      <input
-        id="date-for"
-        type="text"
-        className="search-date"
-        placeholder="10/25/2022"
-      />
-      <label htmlFor="date-for">For</label>
-
-      <input
-      type="text"
-      className="search-date"
-      placeholder="10/25/2022"
-    />
-    <MDBBtn className="button-filter" color='secondary'>Filter</MDBBtn>
-    </div>
-  );
+    return (
+        <MDBContainer fluid>
+            <MDBRow center className='my-4'>
+                <MDBCol lg="6" md="8" sm="10" xs="12">
+                    <div className="input-container">
+                        <MDBInput type="text" className="input-stylew-100" label="Search" />
+                    </div>
+                </MDBCol>
+                <MDBCol lg="2" md="4" sm="5" xs="12">
+                    <label className="label-date" htmlFor="date-for">
+                        From
+                    </label>
+                    <MDBInput id="date-for" type="text" className="input-style" />
+                </MDBCol>
+                <MDBCol lg="2" md="4" sm="5" xs="12">
+                    <label className="label-date" htmlFor="date-from">
+                        To
+                    </label>
+                    <MDBInput id="date-from" type="text" className="input-style" />
+                </MDBCol>
+                <MDBCol lg="2" md="4" sm="2" xs="12">
+                    <div className="input-container">
+                        <MDBBtn className="button-filter" color="secondary">
+                            Filter
+                        </MDBBtn>
+                    </div>
+                </MDBCol>
+            </MDBRow>
+        </MDBContainer>
+    );
 }
