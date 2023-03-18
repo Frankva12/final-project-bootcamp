@@ -3,11 +3,12 @@ import { MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
 import deleteIcon  from '../../assets/delete.png'
 import './Table.css'
 
-export default function TableUsers() {
+export default function TableAdmins() {
   return (
     <MDBTable>
       <MDBTableHead className='table-secondary'>
         <tr>
+          <th scope='col'>Employee</th>
           <th scope='col'>Medical diagnostic</th>
           <th scope='col'>Application date</th>
           <th scope='col'>Medical Unit</th>
@@ -20,7 +21,8 @@ export default function TableUsers() {
       </MDBTableHead>
       <MDBTableBody>
         <tr>
-          <th scope='row'>lorem ipsum....</th>
+          <th scope='row'>Sonia Mendez</th>
+          <th>lorem ipsum....</th>
           <td>03/04/2023</td>
           <td>ISSS</td>
           <td>Francisco Menjivar</td>
@@ -30,7 +32,8 @@ export default function TableUsers() {
           <td><img className='delete-icon' src={deleteIcon} /></td>
         </tr>
         <tr>
-        <th scope='row'>lorem ipsum....</th>
+          <th scope='row'>Sonia Mendez</th>
+          <th>lorem ipsum....</th>
           <td>03/04/2023</td>
           <td>ISSS</td>
           <td>Francisco Menjivar</td>
@@ -40,7 +43,8 @@ export default function TableUsers() {
           <td><img className='delete-icon' src={deleteIcon} /></td>
         </tr>
         <tr>
-        <th scope='row'>lorem ipsum....</th>
+          <th scope='row'>Sonia Mendez</th>
+          <th>lorem ipsum....</th>
           <td>03/04/2023</td>
           <td>ISSS</td>
           <td>Francisco Menjivar</td>
@@ -52,7 +56,8 @@ export default function TableUsers() {
       </MDBTableBody>
       <tfoot>
         <tr>
-        <th scope='row'>lorem ipsum....</th>
+          <th scope='row'>Sonia Mendez</th>
+          <th>lorem ipsum....</th>
           <td>03/04/2023</td>
           <td>ISSS</td>
           <td>Francisco Menjivar</td>
@@ -63,6 +68,6 @@ export default function TableUsers() {
         </tr>
       </tfoot>
     </MDBTable>
-
+    
   );
 }

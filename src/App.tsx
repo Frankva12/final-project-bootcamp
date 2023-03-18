@@ -6,13 +6,15 @@ import TableUsers from './components/Table/TableUsers';
 import { MDBContainer } from 'mdb-react-ui-kit';
 import FilterForm from './components/FilterForm/FilterForm';
 import Profile from './components/Profile/Profile';
+import TableAdmins from './components/Table/TableAdmins';
 function App() {
   return (
     // <Login/>
     <MDBContainer className='container-user' fluid>
       <Profile/>
       <FilterForm/>
-      <TableUsers/>
+      {/* <TableUsers/> */}
+      <TableAdmins/>
     </MDBContainer>
   );
 }
