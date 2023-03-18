@@ -63,6 +63,5 @@ export default function TableUsers() {
         </tr>
       </tfoot>
     </MDBTable>
-
   );
 }
